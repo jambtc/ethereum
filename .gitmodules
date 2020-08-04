@@ -1,0 +1,3 @@
+[submodule "web3.php"]
+	path = web3.php
+	url = https://github.com/jambtc/web3.php.git
