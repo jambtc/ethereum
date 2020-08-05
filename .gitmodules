@@ -1,3 +1,6 @@
 [submodule "web3.php"]
 	path = web3.php
 	url = https://github.com/jambtc/web3.php.git
+[submodule "web3/vendor/sc0vu/web3.php"]
+	path = web3/vendor/sc0vu/web3.php
+	url = https://github.com/jambtc/web3.php.git
