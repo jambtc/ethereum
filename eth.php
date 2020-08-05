@@ -48,7 +48,7 @@ class eth
    public function getFiatRate($type){
        if ($type == 'eth'){
            $url = 'https://www.bitstamp.net/api/v2/ticker/etheur';
-           $result = json_decode(webRequest::request($url,$url,array(),'GET'),true);
+           $result = json_decode(webRequest::getUrl($url,$url,array(),'GET'),true);
            $value = $result['last'];
        }else{
            //qui deve avvenire la connessione all'exchange o al valore del Token
