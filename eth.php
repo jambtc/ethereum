@@ -13,18 +13,9 @@ class eth
    */
    public function latestBlockNumberDec()
    {
-        //Carico i parametri della webapp
-        $settings=Settings::load();
-        // if ($settings === null || empty($settings->poa_url)){// || empty($settings->poa_port)){
-        //   throw new CHttpException(404,'The requested settings page does not exist.');
-        // }
-        // if( !webRequest::url_test( $settings->poa_url ) ) {
-        //   return hexdec(0);
-        // }
-        // mi connetto al nodo poa
-        // $web3 = new Web3($settings->poa_url);
-        // $web3 = new Web3(WebApp::getPoaNode());
-        $poaNode = WebApp::getPoaNode();
+    //Carico i parametri della webapp
+    $settings=Settings::load();
+    $poaNode = WebApp::getPoaNode();
 		if (!$poaNode){
 			$save = new Save;
 			$save->WriteLog('libs','eth','latestBlockNumberDec',"All Nodes are down.");
